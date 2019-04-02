@@ -87,15 +87,23 @@ public class telaprincipal extends javax.swing.JFrame {
 
         jRadioButtonMenuItem2.setSelected(true);
         jRadioButtonMenuItem2.setText("Turmas");
+        jRadioButtonMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jRadioButtonMenuItem2);
 
         jRadioButtonMenuItem3.setSelected(true);
         jRadioButtonMenuItem3.setText("Provas");
+        jRadioButtonMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jRadioButtonMenuItem3);
 
         jMenuBar1.add(jMenu2);
-
-        jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
@@ -166,8 +174,19 @@ janela.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jRadioButtonMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem1ActionPerformed
-        // TODO add your handling code here:
+ManutencaodeAlunos janela = new ManutencaodeAlunos(this, true);
+janela.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButtonMenuItem1ActionPerformed
+
+    private void jRadioButtonMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem2ActionPerformed
+Manutencaodeturmas janela = new Manutencaodeturmas(this, true);
+janela.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonMenuItem2ActionPerformed
+
+    private void jRadioButtonMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem3ActionPerformed
+Manutencaodeprova janela = new Manutencaoprova(this, true);
+janela.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
